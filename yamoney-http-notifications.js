@@ -18,8 +18,8 @@ exports.index = function(secret, callback) {
             res.send(200);
             callback(null, req.body);
         } else {
-            callback("SHA1 hash check failed");
             res.send(400, 'Checksum failed');
+            callback("SHA1 hash check failed");
         }
     }
 };
