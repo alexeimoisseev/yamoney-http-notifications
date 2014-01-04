@@ -1,0 +1,6 @@
+{
+    "name": "yamoney-http-notifications",
+    "version": "0.0.1",
+    "private": false,
+    "description": "Route for Express.js that checks HTTP-notifications from Yandex.Money"
+}

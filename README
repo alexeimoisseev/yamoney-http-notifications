@@ -1,0 +1,8 @@
+Usage:
+
+var yamoney-http = require('yamoney-http-notifications');
+...
+app.post('/yamoney', yamoney-http('YOUR_SECRET', function(err, body) {
+    console.log(body); // here will be body of the notification
+});
+
