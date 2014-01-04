@@ -1,8 +1,8 @@
 var crypto = require('crypto');
-var shasum = crypto.createHash('sha1');
 
 module.exports = function(secret, callback) {
     return function(req, res) {
+        var shasum = crypto.createHash('sha1');
         var checkString = req.body.notification_type + '&' +
             req.body.operation_id + '&' +
             req.body.amount + '&' +
