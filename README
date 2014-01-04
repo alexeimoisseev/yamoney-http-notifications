@@ -1,3 +1,6 @@
+Yandex.Money HTTP notifications module for express.js.
+http://api.yandex.com/money/doc/dg/reference/notification-p2p-incoming.xml
+
 Usage:
 
 var yamoney-http = require('yamoney-http-notifications');
