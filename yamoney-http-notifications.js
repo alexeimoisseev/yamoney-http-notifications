@@ -15,7 +15,6 @@ exports.index = function(secret, callback) {
         shasum.update(checkString);
         var mySha = shasum.digest('hex');
         if (mySha == req.body.sha1_hash) {
-            console.log('success for', req.body.operation_id);
             res.send(200);
             callback(null, req.body);
         } else {
